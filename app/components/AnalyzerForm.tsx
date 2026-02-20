@@ -75,7 +75,7 @@ export default function AnalyzerForm() {
           <input type="text" name="context" placeholder="e.g., right is scrambled egg" className="w-full border border-gray-300 p-3 rounded-lg mt-1 text-sm focus:ring-2 focus:ring-blue-500 outline-none"/>
         </div>
         <div>
-          <input type="file" name="image" accept="image/*" required className="w-full border border-gray-300 p-2 rounded-lg text-sm"/>
+          <input type="file" name="image" accept="image/*" capture="environment" required className="w-full border border-gray-300 p-2 rounded-lg text-sm"/>
         </div>
         <button type="submit" disabled={loading} className="w-full bg-black hover:bg-gray-800 text-white p-3 font-bold rounded-lg disabled:bg-gray-400">
           {loading ? "Analyzing Context & Image..." : "Analyze Meal"}
